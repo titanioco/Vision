@@ -1,0 +1,500 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>VisionLux | Premium Eyewear in 48h | Gafas Premium en 48h</title>
+    
+    <!-- Social Meta Tags -->
+    <meta property="og:title" content="VisionLux - Premium Eyewear Delivered in 48 Hours"/>
+    <meta property="og:description" content="Custom prescription glasses and designer sunglasses delivered to your door in Colombia within 48 hours. Pay with crypto or traditional methods."/>
+    <meta property="og:url" content="https://www.onspace.ai"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="VisionLux"/>
+    <meta property="og:image" content="https://cdn-ai.onspace.ai/onspace/project/screenshot/online/pre-site/9bew1b.jpg"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="VisionLux - Premium Eyewear Delivered in 48 Hours"/>
+    <meta name="twitter:description" content="Custom prescription glasses and designer sunglasses delivered to your door in Colombia within 48 hours. Pay with crypto or traditional methods."/>
+    <meta name="twitter:image" content="https://cdn-ai.onspace.ai/onspace/project/screenshot/online/pre-site/9bew1b.jpg"/>
+    <meta name="twitter:url" content="https://www.onspace.ai"/>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        glow: {
+                            '0%': { opacity: '0.5' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(100px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-black text-gray-900 dark:text-white transition-colors duration-300">
+    
+    <!-- Floating Background Blobs -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-20 -left-20 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-20 animate-float"></div>
+        <div class="absolute top-40 right-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-20 animate-float" style="animation-delay: 2s;"></div>
+        <div class="absolute -bottom-32 left-1/3 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-3xl opacity-20 animate-float" style="animation-delay: 4s;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-glasses text-3xl text-primary-500"></i>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-primary-500 to-purple-500 bg-clip-text text-transparent">VisionLux</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="smooth-transition hover:text-primary-500" data-en="Home" data-es="Inicio">Home</a>
+                    <a href="#products" class="smooth-transition hover:text-primary-500" data-en="Products" data-es="Productos">Products</a>
+                    <a href="#custom" class="smooth-transition hover:text-primary-500" data-en="Custom Quote" data-es="Cotización">Custom Quote</a>
+                    <a href="#about" class="smooth-transition hover:text-primary-500" data-en="About" data-es="Nosotros">About</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Language Toggle -->
+                    <button id="langToggle" class="px-3 py-1 rounded-lg glass-card smooth-transition hover:bg-primary-500 hover:text-white text-sm font-semibold">
+                        EN / ES
+                    </button>
+                    
+                    <!-- Dark Mode Toggle -->
+                    <button id="themeToggle" class="p-2 rounded-lg glass-card smooth-transition hover:bg-primary-500 hover:text-white">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </button>
+                    
+                    <!-- Cart -->
+                    <button id="cartBtn" class="relative p-2 rounded-lg glass-card smooth-transition hover:bg-primary-500 hover:text-white">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span id="cartCount" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center cart-badge hidden">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 px-4">
+        <div class="container mx-auto text-center animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                <span data-en="Premium Eyewear" data-es="Gafas Premium" class="bg-gradient-to-r from-primary-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Premium Eyewear</span><br/>
+                <span data-en="Delivered in" data-es="Entregadas en">Delivered in</span> <span class="text-primary-500">48h</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto" data-en="Custom prescription glasses and designer sunglasses delivered to your door in Colombia. Pay with crypto or traditional methods." data-es="Gafas con fórmula personalizada y gafas de sol de diseñador entregadas a tu puerta en Colombia. Paga con cripto o métodos tradicionales.">
+                Custom prescription glasses and designer sunglasses delivered to your door in Colombia. Pay with crypto or traditional methods.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <button onclick="scrollToCustom()" class="px-8 py-4 bg-gradient-to-r from-primary-500 to-purple-500 rounded-xl font-semibold text-white smooth-transition hover:scale-105 hover:shadow-2xl hover:shadow-primary-500/50">
+                    <i class="fas fa-calculator mr-2"></i>
+                    <span data-en="Get Custom Quote" data-es="Cotización Personalizada">Get Custom Quote</span>
+                </button>
+                <button onclick="scrollToProducts()" class="px-8 py-4 glass-card rounded-xl font-semibold smooth-transition hover:bg-primary-500 hover:text-white">
+                    <i class="fas fa-shopping-bag mr-2"></i>
+                    <span data-en="Browse Products" data-es="Ver Productos">Browse Products</span>
+                </button>
+            </div>
+            
+            <!-- Features -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="glass-card p-6 rounded-2xl smooth-transition hover-lift">
+                    <i class="fas fa-truck-fast text-4xl text-primary-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2" data-en="48h Delivery" data-es="Entrega en 48h">48h Delivery</h3>
+                    <p class="text-gray-600 dark:text-gray-400" data-en="Fast shipping across Colombia" data-es="Envío rápido en toda Colombia">Fast shipping across Colombia</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl smooth-transition hover-lift">
+                    <i class="fas fa-eye text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2" data-en="Custom Prescription" data-es="Fórmula Personalizada">Custom Prescription</h3>
+                    <p class="text-gray-600 dark:text-gray-400" data-en="Made exactly to your formula" data-es="Hechas exactamente a tu fórmula">Made exactly to your formula</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl smooth-transition hover-lift">
+                    <i class="fab fa-ethereum text-4xl text-pink-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2" data-en="Crypto Payments" data-es="Pagos Cripto">Crypto Payments</h3>
+                    <p class="text-gray-600 dark:text-gray-400" data-en="Accept BTC, ETH, Lightning" data-es="Aceptamos BTC, ETH, Lightning">Accept BTC, ETH, Lightning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-4 relative">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">
+                <span data-en="Our Collection" data-es="Nuestra Colección">Our Collection</span>
+            </h2>
+            
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-btn active px-6 py-3 rounded-xl glass-card smooth-transition hover:bg-primary-500 hover:text-white" data-filter="all">
+                    <span data-en="All" data-es="Todos">All</span>
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-xl glass-card smooth-transition hover:bg-primary-500 hover:text-white" data-filter="prescription">
+                    <span data-en="Prescription" data-es="Fórmula">Prescription</span>
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-xl glass-card smooth-transition hover:bg-primary-500 hover:text-white" data-filter="sunglasses">
+                    <span data-en="Sunglasses" data-es="Gafas de Sol">Sunglasses</span>
+                </button>
+            </div>
+            
+            <!-- Product Grid -->
+            <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Quote Builder -->
+    <section id="custom" class="py-20 px-4 relative">
+        <div class="container mx-auto max-w-5xl">
+            <div class="glass-card rounded-3xl p-8 md:p-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                    <span data-en="Custom Quote Builder" data-es="Cotizador Personalizado">Custom Quote Builder</span>
+                </h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-8" data-en="Enter your prescription and customize your perfect glasses" data-es="Ingresa tu fórmula y personaliza tus gafas perfectas">
+                    Enter your prescription and customize your perfect glasses
+                </p>
+                
+                <!-- Prescription Formula -->
+                <div class="mb-8">
+                    <h3 class="text-2xl font-semibold mb-4">
+                        <i class="fas fa-file-medical mr-2 text-primary-500"></i>
+                        <span data-en="Medical Formula" data-es="Fórmula Médica">Medical Formula</span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Right Eye -->
+                        <div class="glass-card p-6 rounded-xl">
+                            <h4 class="font-semibold mb-4 text-primary-500" data-en="Right Eye (OD)" data-es="Ojo Derecho (OD)">Right Eye (OD)</h4>
+                            <div class="space-y-3">
+                                <input type="number" step="0.25" placeholder="SPH (Sphere)" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition" id="od_sph"/>
+                                <input type="number" step="0.25" placeholder="CYL (Cylinder)" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition" id="od_cyl"/>
+                                <input type="number" step="1" placeholder="AXIS (0-180)" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition" id="od_axis"/>
+                                <input type="number" step="0.25" placeholder="ADD (Addition)" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition" id="od_add"/>
+                            </div>
+                        </div>
+                        
+                        <!-- Left Eye -->
+                        <div class="glass-card p-6 rounded-xl">
+                            <h4 class="font-semibold mb-4 text-purple-500" data-en="Left Eye (OS)" data-es="Ojo Izquierdo (OS)">Left Eye (OS)</h4>
+                            <div class="space-y-3">
+                                <input type="number" step="0.25" placeholder="SPH (Sphere)" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition" id="os_sph"/>
+                                <input type="number" step="0.25" placeholder="CYL (Cylinder)" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition" id="os_cyl"/>
+                                <input type="number" step="1" placeholder="AXIS (0-180)" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition" id="os_axis"/>
+                                <input type="number" step="0.25" placeholder="ADD (Addition)" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition" id="os_add"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Customization Options -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <!-- Material -->
+                    <div>
+                        <label class="block font-semibold mb-2">
+                            <i class="fas fa-atom mr-2 text-primary-500"></i>
+                            <span data-en="Material" data-es="Material">Material</span>
+                        </label>
+                        <select id="material" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition">
+                            <option value="policarbonato">Policarbonato</option>
+                            <option value="polimero">Polímero Plástico</option>
+                            <option value="silica">Silica</option>
+                            <option value="tallados">Tallados</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Filter -->
+                    <div>
+                        <label class="block font-semibold mb-2">
+                            <i class="fas fa-filter mr-2 text-purple-500"></i>
+                            <span data-en="Filter" data-es="Filtro">Filter</span>
+                        </label>
+                        <select id="filter" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition">
+                            <option value="none" data-en="None" data-es="Ninguno">None</option>
+                            <option value="solar">Para Sol</option>
+                            <option value="blue-light">Luz Azul</option>
+                            <option value="transition">Transition</option>
+                            <option value="tinted-transition">Tinted Transition</option>
+                            <option value="especiales">Especiales (Soplado/Soldadura)</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Frame Style -->
+                    <div>
+                        <label class="block font-semibold mb-2">
+                            <i class="fas fa-glasses mr-2 text-pink-500"></i>
+                            <span data-en="Frame Style" data-es="Estilo de Montura">Frame Style</span>
+                        </label>
+                        <select id="frameStyle" class="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-300 dark:border-gray-700 focus:border-primary-500 focus:outline-none smooth-transition">
+                            <option value="wayfarer">Wayfarer</option>
+                            <option value="aviator">Aviator</option>
+                            <option value="round">Round</option>
+                            <option value="rectangular">Rectangular</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Additional Features -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-4">
+                        <span data-en="Additional Features" data-es="Características Adicionales">Additional Features</span>
+                    </h3>
+                    <div class="flex flex-wrap gap-4">
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" id="antireflex" class="w-5 h-5 rounded border-gray-300 text-primary-500 focus:ring-primary-500"/>
+                            <span data-en="Anti-Reflection" data-es="Antirreflejo">Anti-Reflection</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" id="blueLight" class="w-5 h-5 rounded border-gray-300 text-primary-500 focus:ring-primary-500"/>
+                            <span data-en="Blue Light Filter" data-es="Filtro Luz Azul">Blue Light Filter</span>
+                        </label>
+                        <label class="flex items-center space-x-2 cursor-pointer">
+                            <input type="checkbox" id="scratch" class="w-5 h-5 rounded border-gray-300 text-primary-500 focus:ring-primary-500"/>
+                            <span data-en="Scratch Resistant" data-es="Anti-Rayones">Scratch Resistant</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Price Display -->
+                <div class="glass-card p-6 rounded-xl mb-6 text-center">
+                    <p class="text-gray-600 dark:text-gray-400 mb-2" data-en="Estimated Price" data-es="Precio Estimado">Estimated Price</p>
+                    <p class="text-4xl font-bold text-primary-500">
+                        <span id="quotedPrice">$250,000</span> <span class="text-2xl">COP</span>
+                    </p>
+                    <p class="text-sm text-gray-500 mt-2">≈ <span id="quotedPriceUSD">$65</span> USD</p>
+                </div>
+                
+                <button onclick="addQuoteToCart()" class="w-full px-8 py-4 bg-gradient-to-r from-primary-500 to-purple-500 rounded-xl font-semibold text-white smooth-transition hover:scale-105 hover:shadow-2xl">
+                    <i class="fas fa-cart-plus mr-2"></i>
+                    <span data-en="Add to Cart" data-es="Agregar al Carrito">Add to Cart</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 relative">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                <span data-en="Why VisionLux?" data-es="¿Por Qué VisionLux?">Why VisionLux?</span>
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-300 mb-12" data-en="We combine cutting-edge technology with traditional craftsmanship to deliver the perfect eyewear experience." data-es="Combinamos tecnología de vanguardia con artesanía tradicional para ofrecer la experiencia perfecta en gafas.">
+                We combine cutting-edge technology with traditional craftsmanship to deliver the perfect eyewear experience.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass-card p-8 rounded-2xl text-left smooth-transition hover-lift">
+                    <i class="fas fa-award text-5xl text-primary-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3" data-en="Premium Brands" data-es="Marcas Premium">Premium Brands</h3>
+                    <p class="text-gray-600 dark:text-gray-400" data-en="Ray-Ban, Oakley, and exclusive designs" data-es="Ray-Ban, Oakley y diseños exclusivos">Ray-Ban, Oakley, and exclusive designs</p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-left smooth-transition hover-lift">
+                    <i class="fas fa-shield-alt text-5xl text-purple-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3" data-en="Quality Guarantee" data-es="Garantía de Calidad">Quality Guarantee</h3>
+                    <p class="text-gray-600 dark:text-gray-400" data-en="1-year warranty on all products" data-es="Garantía de 1 año en todos los productos">1-year warranty on all products</p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-left smooth-transition hover-lift">
+                    <i class="fas fa-wallet text-5xl text-pink-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3" data-en="Flexible Payments" data-es="Pagos Flexibles">Flexible Payments</h3>
+                    <p class="text-gray-600 dark:text-gray-400" data-en="PayU, PSE, cards, crypto (MetaMask, Lightning)" data-es="PayU, PSE, tarjetas, crypto (MetaMask, Lightning)">PayU, PSE, cards, crypto (MetaMask, Lightning)</p>
+                </div>
+                
+                <div class="glass-card p-8 rounded-2xl text-left smooth-transition hover-lift">
+                    <i class="fas fa-laptop-medical text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="text-2xl font-semibold mb-3" data-en="Expert Support" data-es="Soporte Experto">Expert Support</h3>
+                    <p class="text-gray-600 dark:text-gray-400" data-en="Virtual consultations with optometrists" data-es="Consultas virtuales con optómetras">Virtual consultations with optometrists</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass-card py-12 px-4 mt-20">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-glasses text-2xl text-primary-500"></i>
+                        <span class="text-xl font-bold">VisionLux</span>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400" data-en="Premium eyewear delivered in 48 hours across Colombia." data-es="Gafas premium entregadas en 48 horas en toda Colombia.">Premium eyewear delivered in 48 hours across Colombia.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4" data-en="Quick Links" data-es="Enlaces Rápidos">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                        <li><a href="#home" class="hover:text-primary-500 smooth-transition" data-en="Home" data-es="Inicio">Home</a></li>
+                        <li><a href="#products" class="hover:text-primary-500 smooth-transition" data-en="Products" data-es="Productos">Products</a></li>
+                        <li><a href="#custom" class="hover:text-primary-500 smooth-transition" data-en="Custom Quote" data-es="Cotización">Custom Quote</a></li>
+                        <li><a href="#about" class="hover:text-primary-500 smooth-transition" data-en="About" data-es="Nosotros">About</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4" data-en="Contact" data-es="Contacto">Contact</h4>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>+57 300 123 4567</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@visionlux.co</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Bogotá, Colombia</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4" data-en="Follow Us" data-es="Síguenos">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 glass-card rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white smooth-transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 glass-card rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white smooth-transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 glass-card rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white smooth-transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-300 dark:border-gray-700 pt-8 text-center text-gray-600 dark:text-gray-400">
+                <p>© 2025 VisionLux. <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="glass-card rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-auto p-8 animate-slide-up">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-3xl font-bold">
+                    <i class="fas fa-shopping-cart mr-2 text-primary-500"></i>
+                    <span data-en="Shopping Cart" data-es="Carrito de Compras">Shopping Cart</span>
+                </h2>
+                <button onclick="closeCart()" class="text-2xl hover:text-red-500 smooth-transition">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div id="cartItems" class="space-y-4 mb-6">
+                <!-- Cart items will be inserted here -->
+            </div>
+            
+            <div class="border-t border-gray-300 dark:border-gray-700 pt-6">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-xl font-semibold" data-en="Total:" data-es="Total:">Total:</span>
+                    <span class="text-3xl font-bold text-primary-500">
+                        $<span id="cartTotal">0</span> <span class="text-xl">COP</span>
+                    </span>
+                </div>
+                
+                <button onclick="openPaymentModal()" class="w-full px-8 py-4 bg-gradient-to-r from-primary-500 to-purple-500 rounded-xl font-semibold text-white smooth-transition hover:scale-105 hover:shadow-2xl">
+                    <i class="fas fa-credit-card mr-2"></i>
+                    <span data-en="Proceed to Payment" data-es="Proceder al Pago">Proceed to Payment</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="glass-card rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-auto p-8 animate-slide-up">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-3xl font-bold">
+                    <i class="fas fa-wallet mr-2 text-primary-500"></i>
+                    <span data-en="Payment Method" data-es="Método de Pago">Payment Method</span>
+                </h2>
+                <button onclick="closePayment()" class="text-2xl hover:text-red-500 smooth-transition">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <!-- Traditional Payments -->
+                <div class="glass-card p-6 rounded-xl smooth-transition hover:bg-primary-500 hover:text-white cursor-pointer" onclick="selectPayment(&#39;payu&#39;)">
+                    <i class="fas fa-credit-card text-3xl mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-2">PayU</h3>
+                    <p class="text-sm opacity-80" data-en="Credit/Debit Cards" data-es="Tarjetas Crédito/Débito">Credit/Debit Cards</p>
+                </div>
+                
+                <div class="glass-card p-6 rounded-xl smooth-transition hover:bg-primary-500 hover:text-white cursor-pointer" onclick="selectPayment(&#39;pse&#39;)">
+                    <i class="fas fa-university text-3xl mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-2">PSE</h3>
+                    <p class="text-sm opacity-80" data-en="Bank Transfer" data-es="Transferencia Bancaria">Bank Transfer</p>
+                </div>
+                
+                <!-- Crypto Payments -->
+                <div class="glass-card p-6 rounded-xl smooth-transition hover:bg-purple-500 hover:text-white cursor-pointer" onclick="selectPayment(&#39;metamask&#39;)">
+                    <i class="fab fa-ethereum text-3xl mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-2">MetaMask</h3>
+                    <p class="text-sm opacity-80" data-en="ETH, USDT, USDC" data-es="ETH, USDT, USDC">ETH, USDT, USDC</p>
+                </div>
+                
+                <div class="glass-card p-6 rounded-xl smooth-transition hover:bg-yellow-500 hover:text-white cursor-pointer" onclick="selectPayment(&#39;lightning&#39;)">
+                    <i class="fas fa-bolt text-3xl mb-3"></i>
+                    <h3 class="text-xl font-semibold mb-2">Lightning Network</h3>
+                    <p class="text-sm opacity-80" data-en="Bitcoin (BTC)" data-es="Bitcoin (BTC)">Bitcoin (BTC)</p>
+                </div>
+            </div>
+            
+            <div class="text-center text-gray-600 dark:text-gray-400 text-sm">
+                <i class="fas fa-lock mr-2"></i>
+                <span data-en="All payments are secure and encrypted" data-es="Todos los pagos son seguros y encriptados">All payments are secure and encrypted</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./dist/main.js"></script>
+
+
+</body></html>

@@ -1,0 +1,16 @@
+{
+  "name": "visionlux",
+  "version": "1.0.0",
+  "private": true,
+ "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "concurrently \"npm run typecheck\" \"npm run serve\"",
+    "typecheck": "tsc -w -p tsconfig.json",
+    "serve": "http-server . -p 4173 -c-1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "http-server": "^14.1.1",
+    "typescript": "^5.9.3"
+  }
+}
